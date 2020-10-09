@@ -68,7 +68,7 @@
 
         <!-- brand -->
         <div class="logo">
-            <a href="/creator" class="logo-expanded">
+            <a href="/adminstrator" class="logo-expanded">
                 <i class="ion-social-buffer"></i>
                 <span class="nav-label">Flixo</span>
             </a>
@@ -114,7 +114,7 @@
                 <!-- user login dropdown start-->
                 <li class="dropdown text-center">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="username">John Deo </span> <span class="caret"></span>
+                        <span class="username">{{ request.user }} </span> <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu extended pro-menu fadeInUp animated" tabindex="5003" style="overflow: hidden; outline: none;">
                         <li><a href="/"><i class="fa fa-briefcase"></i>Change Password</a></li>
@@ -303,8 +303,8 @@
 
     <script type="text/javascript">
         /* ==============================================
-                     Counter Up
-                     =============================================== */
+                             Counter Up
+                             =============================================== */
         jQuery(document).ready(function($) {
             $('.counter').counterUp({
                 delay: 100,

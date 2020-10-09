@@ -90,7 +90,7 @@
 
         <!-- brand -->
         <div class="logo">
-            <a href="/creator" class="logo-expanded">
+            <a href="/adminstrator" class="logo-expanded">
                 <i class="ion-social-buffer"></i>
                 <span class="nav-label">Flixo</span>
             </a>
@@ -101,9 +101,9 @@
             <ul class="list-unstyled">
                 <li class="active"><a href="/adminstrator"><i class="ion-home"></i> <span class="nav-label">Dashboard</span></a></li>
                 <li><a href="/admin-videos"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Videos</span></a></li>
-                <li><a href="admin-contentcreator"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Content Creators</span></a></li>
+                <li><a href="admin-contentcreator"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Content Creators(comming soon)</span></a></li>
                 <li><a href="/admin-viewers"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Viewers</span></a></li>
-                <li><a href="admin-orders.html"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Orders</span></a></li>
+                <li><a href="admin-orders.html"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Orders(comming soon)</span></a></li>
                 <li><a href="/admin-languages"><i class="ion-eye"></i> <span class="nav-label">Languages </span></a></li>
                 <li><a href="/admin-genre"><i class="ion-eye"></i> <span class="nav-label">Genres </span></a></li>
                 <li><a href="/admin-age"><i class="ion-ios7-paper-outline"></i> <span class="nav-label">Age Restrictions</span></a></li>
@@ -135,7 +135,7 @@
                 <!-- user login dropdown start-->
                 <li class="dropdown text-center">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <span class="username">John Deo </span> <span class="caret"></span>
+                        <span class="username">{{ request.user }} </span> <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu extended pro-menu fadeInUp animated" tabindex="5003" style="overflow: hidden; outline: none;">
                         <li><a href="/"><i class="fa fa-briefcase"></i>Change Password</a></li>
@@ -317,8 +317,8 @@
 
     <script type="text/javascript">
         /* ==============================================
-                     Counter Up
-                     =============================================== */
+                                     Counter Up
+                                     =============================================== */
         jQuery(document).ready(function($) {
             $('.counter').counterUp({
                 delay: 100,
